@@ -1,0 +1,84 @@
+/* Styles for Projects section */
+.projects {
+  margin: 9rem; /* Center the section horizontally with some margin */
+}
+
+.projects h2 {
+  text-align: left; /* Center the heading text (optional, adjust as needed) */
+  margin-bottom: 20px; /* Add some space below the heading */
+  font-size: 2em; /* Increase heading font size */
+}
+
+/* Styles for project cards */
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the projects horizontally */
+  gap: 20px; /* Add gap between project cards */
+}
+
+.project-card {
+  width: calc(
+    33% - 20px
+  ); /* Set card width to 33% of available space with some margin */
+  background-color: #f5f5f5; /* Light gray background for cards */
+  border-radius: 5px; /* Add rounded corners to cards */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  margin-bottom: 20px; /* Add some space below each card */
+  padding: 20px; /* Add padding inside cards */
+  text-align: center; /* Center content within cards (optional, adjust as needed) */
+}
+
+@media (max-width: 992px) {
+  .projects-container {
+    justify-content: space-between; /* Change to space between on smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    width: calc(50% - 20px); /* Set card width to 50% on smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .project-card {
+    width: calc(
+      100% - 20px
+    ); /* Set card width to 100% on even smaller screens */
+  }
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%; /* Ensure project info fills the entire card height */
+}
+
+.project-info h3 {
+  font-size: 1.2em; /* Set font size for project titles */
+  margin-bottom: 5px; /* Add some space below titles */
+}
+
+.project-info p {
+  font-size: 0.9em; /* Set font size for project descriptions */
+  line-height: 1.5; /* Increase line spacing for better readability */
+  margin-bottom: 10px; /* Add some space below descriptions */
+}
+
+.project-info a {
+  color: #333; /* Set link color */
+  text-decoration: none; /* Remove underline decoration from links */
+  font-weight: bold; /* Make links bold for better visibility */
+}
+
+.project-info a:hover {
+  text-decoration: underline; /* Add underline decoration on hover */
+}
+
+.technologies {
+  font-size: 0.8em; /* Set font size for technology list */
+  font-style: italic; /* Make technology list italic */
+}
+  

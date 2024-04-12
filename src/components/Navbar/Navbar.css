@@ -1,9 +1,9 @@
+/* Styles for navbar */
 .navbar {
   background-color: #000;
   color: #fff;
   display: flex;
-  justify-content: space-between;
-  justify-content: end;
+  justify-content: flex-end; /* Align the navbar to the right side */
   padding: 1rem 2rem;
 }
 
@@ -25,4 +25,21 @@
 
 .navbar a:hover {
   color: #ddd;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack items vertically for smaller screens */
+    align-items: center; /* Center items vertically for smaller screens */
+    padding: 1rem; /* Adjust padding for smaller screens */
+  }
+
+  .navbar ul {
+    margin-top: 1rem; /* Add some space between items for smaller screens */
+  }
+
+  .navbar li {
+    margin-right: 1.5rem; /* Adjust margin for smaller screens */
+  }
 }

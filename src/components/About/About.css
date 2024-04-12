@@ -1,5 +1,5 @@
+/* General styles */
 .about {
-  /* Assuming the About component is wrapped in a div with class about */
   padding: 9rem; /* Adjust padding as desired */
 }
 
@@ -21,4 +21,31 @@ p {
 /* Add dark mode styles if applicable */
 .dark .about p {
   color: #ddd; /* Adjust text color for dark mode */
+}
+
+.social-links {
+  margin-top: 2rem; /* Increase margin-top for more space */
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  gap : 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .about {
+    padding: 4rem 2rem; /* Adjust padding for smaller screens */
+  }
+
+  h2 {
+    font-size: 1.5rem; /* Reduce font size for smaller screens */
+  }
+
+  p {
+    font-size: 1rem; /* Reduce font size for smaller screens */
+    max-width: none; /* Remove max-width for smaller screens */
+  }
 }
