@@ -1,0 +1,24 @@
+.about {
+  /* Assuming the About component is wrapped in a div with class about */
+  padding: 9rem; /* Adjust padding as desired */
+}
+
+h2 {
+  /* Styles for the heading */
+  font-size: 2rem; /* Adjust font size as desired */
+  margin-bottom: 1rem;
+  font-weight: bold; /* Remove aria-hidden if you want the heading to be announced by screen readers */
+}
+
+p {
+  /* Styles for the paragraph */
+  font-size: 1.1rem; /* Adjust font size as desired */
+  line-height: 1.5;
+  max-width: 30em; /* Adjust max-width as desired */
+  color: #777; /* Adjust text color as desired */
+}
+
+/* Add dark mode styles if applicable */
+.dark .about p {
+  color: #ddd; /* Adjust text color for dark mode */
+}

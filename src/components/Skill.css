@@ -1,0 +1,53 @@
+.skill {
+  /* Assuming the About component is wrapped in a div with class about */
+  padding: 9rem; /* Adjust padding as desired */
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+.skills-container h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.skills-container p {
+  font-size: 1.1rem; /* Adjust font size as desired */
+  line-height: 1.5;
+  max-width: 30em; /* Adjust max-width as desired */
+  color: #777;
+  text-align: left;
+}
+
+.skill-sections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill-section {
+  margin: 15px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: calc(33% - 30px);
+  text-align: left;
+}
+
+.skill-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.skill-section p {
+  font-size: 1rem;
+  line-height: 1.3;
+}
+.skills-container {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #f2f2f2; /* Light grey background */
+}
+.center-text {
+  text-align: center;
+}
