@@ -1,32 +1,20 @@
 [
   {
-    "title": "Project One: Ayurvedic Information System",
+    "title": "Ayurvedic Information System",
     "description": "The Ayurvedic Information System combines ReactJS frontend and Python backend for holistic Ayurvedic insights and wellness recommendations.",
     "link": "https://github.com/pathakjiop/Ayurvedic-Information-System",
-    "technologies": ["React", "Python", "JSON"]
+    "technologies": ["React", "Python", "JSON", "Gemini API"]
   },
   {
-    "title": "Project Two: E-commerce Redefined",
-    "description": "An innovative commerce platform focusing on personalized recommendations and seamless shopping experience.",
-    "link": "https://your-project-two-website.com",
-    "technologies": ["Vue.js", "Python", "Django"]
+    "title": "Healthy Lifestyle",
+    "description": "Healthy-Lifestyle project promotes wellness via Gemini API for personalized BMI calculations and tailored advice through a 25-question questionnaire.",
+    "link": "https://github.com/pathakjiop/Healthy-Lifestyle",
+    "technologies": ["React", "Python", "JSON", "Gemini API"]
   },
   {
-    "title": "Project One: Building a Better Blog",
-    "description": "A modern blog platform with advanced features for writers.",
-    "link": "https://your-project-one-website.com",
-    "technologies": ["React", "Node.js", "MongoDB"]
-  },
-  {
-    "title": "Project One: Building a Better Blog",
-    "description": "A modern blog platform with advanced features for writers.",
-    "link": "https://your-project-one-website.com",
-    "technologies": ["React", "Node.js", "MongoDB"]
-  },
-  {
-    "title": "Project One: Building a Better Blog",
-    "description": "A modern blog platform with advanced features for writers.",
-    "link": "https://your-project-one-website.com",
-    "technologies": ["React", "Node.js", "MongoDB"]
+    "title": "Cloth Shop Mangament System",
+    "description": "Cloth Shop Management System: Tkinter GUI, MySQL database for cloth inventory management—add, view, buy, and remove functionalities included.",
+    "link": "https://github.com/pathakjiop/Cloth-Shop-Mangament-System",
+    "technologies": ["Python", "MySQL"]
   }
 ]

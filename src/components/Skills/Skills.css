@@ -3,6 +3,7 @@
   padding: 9rem; /* Adjust padding as desired */
   text-align: center;
   background-color: #f2f2f2;
+  height: 960px;
 }
 
 .skills-container h1 {
@@ -20,13 +21,14 @@
 }
 
 .skill-sections {
+  padding: 9rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .skill-section {
-  margin: 15px;
+  margin: 20px;
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 5px;
@@ -53,7 +55,26 @@
 .center-text {
   text-align: center;
 }
+.custom-text {
+  color: #718096; /* text-gray-500 */
+  font-size: 1.25rem; /* text-xlg */
+}
 
+.custom-text.md\:text-xl {
+  font-size: 1.5rem; /* md:text-xl */
+}
+
+.custom-text.lg\:text-base {
+  font-size: 1rem; /* lg:text-base */
+}
+
+.custom-text.xl\:text-xl {
+  font-size: 1.5rem; /* xl:text-xl */
+}
+
+.custom-text.dark\:text-gray-400 {
+  color: #cbd5e0; /* dark:text-gray-400 */
+}
 /* Responsive styles */
 @media (max-width: 768px) {
   .skill {
