@@ -1,6 +1,7 @@
-.head {
+.contact {
   padding: 9rem;
   width: 1000px;
+  height: 970px;
 }
 .para {
   text-align: left;
@@ -8,11 +9,10 @@
 }
 
 .container {
-  display: flex;
-  justify-content: center; /* Center the form horizontally */
+  margin-left: 30rem;
+  width: 100%;
+  margin-bottom: 3rem;
 }
-
-.form {
-  margin-right: 10px;
-  padding-left: 5rem;
+.form-control{
+  margin-top : 5px;
 }
