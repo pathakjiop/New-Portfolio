@@ -15,6 +15,19 @@ const Contact = () => {
               htmlFor='exampleFormControlInput1'
               className='form-label'
             >
+              Your Name
+            </label>
+            <input
+              type='email'
+              className='form-control'
+              id='exampleFormControlInput1'
+            />
+          </div>
+          <div className='container'>
+            <label
+              htmlFor='exampleFormControlInput1'
+              className='form-label'
+            >
               Email Address
             </label>
             <input
@@ -36,6 +49,7 @@ const Contact = () => {
               id='exampleFormControlTextarea1'
               rows={3}
               defaultValue={""}
+              
             />
           </div>
         </>
@@ -45,4 +59,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
