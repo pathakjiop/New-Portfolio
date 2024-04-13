@@ -8,7 +8,7 @@
 
 .skills-container h1 {
   font-size: 2rem;
-  margin-bottom: 20px;
+  margin-bott: 20px;
   text-align: left;
 }
 
@@ -28,10 +28,15 @@
 }
 
 .skill-section {
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
   margin: 20px;
   padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+  border-radius: 50px; /* Rounded corners */
+  background-color: #fff; /* White background */
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.1); /* Add shadow */
   width: calc(33% - 30px);
   text-align: left;
 }

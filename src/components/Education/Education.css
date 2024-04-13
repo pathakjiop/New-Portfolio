@@ -11,6 +11,11 @@
 .education-item {
   margin-bottom: 20px; /* Add margin between items */
   padding: 20px; /* Add padding inside items */
+  margin-lef: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 50px;
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.1);
 }
 
 .education-item h3 {
