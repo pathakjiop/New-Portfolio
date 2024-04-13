@@ -1,6 +1,7 @@
 /* General styles */
 .about {
   padding: 9rem; /* Adjust padding as desired */
+  height: 650px;
 }
 
 h2 {
@@ -24,20 +25,24 @@ p {
 }
 
 .social-links {
-  margin-top: 2rem; /* Increase margin-top for more space */
+  margin-top: 8rem; /* Increase margin-top for more space */
+  display: flex; /* Use flexbox to align items */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
 }
 
 .social-icon {
-  width: 30px;
-  height: 30px;
-  margin-right: 10px;
-  gap : 10px;
+  width: 40px; /* Increase width */
+  height: 40px; /* Increase height */
+  margin-right: 20px; /* Adjust margin between icons */
 }
 
 /* Responsive styles */
 @media (max-width: 768px) {
   .about {
     padding: 4rem 2rem; /* Adjust padding for smaller screens */
+    height: auto; /* Remove fixed height for smaller screens */
+    text-align: center; /* Center text on smaller screens */
   }
 
   h2 {
@@ -47,5 +52,15 @@ p {
   p {
     font-size: 1rem; /* Reduce font size for smaller screens */
     max-width: none; /* Remove max-width for smaller screens */
+  }
+
+  .social-links {
+    margin-top: 4rem; /* Adjust margin-top for smaller screens */
+  }
+
+  .social-icon {
+    width: 30px; /* Reduce width for smaller screens */
+    height: 30px; /* Reduce height for smaller screens */
+    margin-right: 10px; /* Reduce margin between icons for smaller screens */
   }
 }
