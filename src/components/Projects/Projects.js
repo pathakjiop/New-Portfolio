@@ -10,19 +10,21 @@ const Project = ({ title, description, image, link, technologies }) => {
       <div className='project-info'>
         <h3>{title}</h3>
         <p>{description}</p>
-        {link && (
-          <a
-            href={link}
-            target='_blank'
-            rel='noreferrer noopener'
-          >
-            Visit Project
-          </a>
-        )}
+
         {technologies && (
           <p className='technologies'>
             <b>Technologies:</b> {technologies.join(", ")}
           </p>
+        )}
+        {link && (
+          <button
+            class='button'
+            onClick={() => window.open(link, "_blank")}
+          >
+            <span class='bracket left'>❴</span>
+            <span class='text'>Code</span>
+            <span class='bracket right'>❵</span>
+          </button>
         )}
       </div>
     </div>

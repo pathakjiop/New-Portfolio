@@ -14,6 +14,7 @@
 .projects-container {
   display: flex;
   flex-wrap: wrap;
+  text-align: center;
   justify-content: center; /* Center the projects horizontally */
   gap: 20px; /* Add gap between project cards */
 }
@@ -53,16 +54,19 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
   height: 100%; /* Ensure project info fills the entire card height */
 }
 
 .project-info h3 {
   font-size: 1.2em; /* Set font size for project titles */
   margin-bottom: 5px; /* Add some space below titles */
+  text-align: center;
 }
 
 .project-info p {
-  font-size: 0.9em; /* Set font size for project descriptions */
+  
+  font-size: 1em; /* Set font size for project descriptions */
   line-height: 1.5; /* Increase line spacing for better readability */
   margin-bottom: 10px; /* Add some space below descriptions */
 }
@@ -71,13 +75,52 @@
   color: #333; /* Set link color */
   text-decoration: none; /* Remove underline decoration from links */
   font-weight: bold; /* Make links bold for better visibility */
+  justify-content: center;
 }
 
 .project-info a:hover {
   text-decoration: underline; /* Add underline decoration on hover */
+  text-align: center;
 }
 
 .technologies {
   font-size: 0.8em; /* Set font size for technology list */
   font-style: italic; /* Make technology list italic */
+  text-align: center;
+}
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  height: 45px;
+  width: 45px;
+  border: none;
+  border-radius: 10px;
+  background-color: black;
+  cursor: pointer;
+  transition: all 0.3s;
+  overflow: hidden;
+  position: relative;
+  top: 4px;
+  left: 20px;
+}
+.bracket {
+  font-size: 18px;
+  transition: all 0.3s;
+  color: #ffffff;
+}
+.text {
+  font-size: 15px;
+  width: 0;
+  transform: scale(0);
+  transition: all 0.3s;
+  color: white;
+}
+.button:hover {
+  width: 100px;
+}
+.button:hover .text {
+  transform: scale(1);
+  width: 40px;
 }
