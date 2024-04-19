@@ -3,7 +3,10 @@ import "./Contact.css";
 
 const Contact = () => {
   return (
-    <div className='contact'>
+    <div
+      className='contact'
+      id='contact'
+    >
       <h1>Get In Touch</h1>
       <p className='para'>
         Have a question or want to collaborate? Feel free to send me a message.
@@ -49,7 +52,6 @@ const Contact = () => {
               id='exampleFormControlTextarea1'
               rows={3}
               defaultValue={""}
-              
             />
           </div>
         </>

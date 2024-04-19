@@ -6,7 +6,8 @@ function Skills() {
   const { sections } = skillsData; // Destructure directly for cleaner access
 
   return (
-    <div className='skill'>
+    <div className='skill'
+    id='skills'>
       <div className='skills-container'>
         <h1>My Skills</h1>
         <p className='custom-text'>

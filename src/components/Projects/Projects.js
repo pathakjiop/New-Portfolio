@@ -4,7 +4,7 @@ import React from "react";
 import "./Projects.css";
 import projectsData from "./Projects.json";
 
-const Project = ({ title, description, image, link, technologies }) => {
+const Project = ({ title, description, link, technologies }) => {
   return (
     <div className='project-card'>
       <div className='project-info'>
@@ -33,14 +33,17 @@ const Project = ({ title, description, image, link, technologies }) => {
 
 const Projects = () => {
   return (
-    <div className='projects'>
+    <div
+      className='projects'
+      id='projects'
+    >
       <h2>My Projects</h2>
       <p>
         Here are some of the projects I've worked on. Click on each project to
         learn more.
       </p>
       <div className='projects-container'>
-        {projectsData.map((project, index) => (
+        {projectsData.map((project) => (
           <Project
             key={project.title}
             {...project}

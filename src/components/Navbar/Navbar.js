@@ -15,31 +15,66 @@ const Navbar = () => {
     document.body.removeChild(link);
   };
 
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <nav className='navbar'>
       <ul>
         <li>
-          <Link to='/about'>About</Link>
-        </li>
-        <li>
-          <Link to='/projects'>Projects</Link>
-        </li>
-        {/* <li>
-          <Link to='/experience'>Experience</Link>
-        </li> */}
-        <li>
-          <Link to='/education'>Education</Link>
-        </li>
-        <li>
-          <Link to='/contact'>Contact</Link>
+          <Link
+            onClick={() => scrollToSection("about")}
+            to='/about'
+          >
+            About
+          </Link>
         </li>
         <li>
           <Link
-            onClick={handleDownloadResume}
-            to='/resume'
+            onClick={() => scrollToSection("skills")}
+            to='/skills'
           >
-            Resume
+            Skills
           </Link>
+        </li>
+        <li>
+          <Link
+            onClick={() => scrollToSection("projects")}
+            to='/projects'
+          >
+            Projects
+          </Link>
+        </li>
+        {/* <li>
+          <Link
+            onClick={() => scrollToSection("experience")}
+            to='/experience'
+          >
+            Experience
+          </Link>
+        </li> */}
+        <li>
+          <Link
+            onClick={() => scrollToSection("education")}
+            to='/education'
+          >
+            Education
+          </Link>
+        </li>
+        <li>
+          <Link
+            onClick={() => scrollToSection("contact")}
+            to='/contact'
+          >
+            Contact
+          </Link>
+        </li>
+        <li>
+          <Link onClick={handleDownloadResume}>Resume</Link>
         </li>
       </ul>
     </nav>

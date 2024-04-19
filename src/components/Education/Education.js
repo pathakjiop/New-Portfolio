@@ -32,7 +32,8 @@ const educationData = [
 
 function Education() {
   return (
-    <div className='education'>
+    <div className='education'
+    id='education'>
       <h2>Education</h2>
       <p>
         I've always been passionate about learning and honing my skills. Here
