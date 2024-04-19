@@ -12,11 +12,12 @@
 
 /* Styles for project cards */
 .projects-container {
+  padding-top: 20px;
   display: flex;
   flex-wrap: wrap;
   text-align: center;
   justify-content: center; /* Center the projects horizontally */
-  gap: 20px; /* Add gap between project cards */
+  gap: 30px; /* Add gap between project cards */
 }
 
 .project-card {
