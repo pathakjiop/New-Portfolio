@@ -3,6 +3,18 @@ import { Link } from "react-router-dom";
 import "./Navbar.css"; // Assuming your CSS file is named style.css
 
 const Navbar = () => {
+  const handleDownloadResume = () => {
+    const resumePath = "/pdf/Atharv Pathak's Resume.pdf";
+
+    // Initiate the download
+    const link = document.createElement("a");
+    link.href = resumePath;
+    link.download = "Atharv_Pathaks_Resume.pdf"; // File name for download
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <nav className='navbar'>
       <ul>
@@ -20,6 +32,14 @@ const Navbar = () => {
         </li>
         <li>
           <Link to='/contact'>Contact</Link>
+        </li>
+        <li>
+          <Link
+            onClick={handleDownloadResume}
+            to='/resume'
+          >
+            Resume
+          </Link>
         </li>
       </ul>
     </nav>
