@@ -1,7 +1,8 @@
 /* Styles for Projects section */
 .projects {
-  margin: 9rem;
-  height: 680px;
+  padding: 9rem;
+  text-align: center;
+  height: 970px;
 }
 
 .projects h2 {
@@ -66,7 +67,6 @@
 }
 
 .project-info p {
-  
   font-size: 1em; /* Set font size for project descriptions */
   line-height: 1.5; /* Increase line spacing for better readability */
   margin-bottom: 10px; /* Add some space below descriptions */
