@@ -1,8 +1,7 @@
 /* Styles for Projects section */
 .projects {
-  padding: 9rem;
-  text-align: center;
-  height: 970px;
+  margin: 9rem;
+  height: 680px;
 }
 
 .projects h2 {
@@ -102,14 +101,11 @@
   cursor: pointer;
   transition: all 0.3s;
   overflow: hidden;
-  position: relative;
-  top: 4px;
-  left: 20px;
 }
 .bracket {
   font-size: 18px;
   transition: all 0.3s;
-  color: #ffffff;
+  color: rgb(182, 104, 255);
 }
 .text {
   font-size: 15px;
